@@ -1,172 +1,92 @@
-# React Wordle
+# Churchle
 
-This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
+A more holy daily word puzzle. Churchle is a religious-themed word guessing game featuring words from the standard works of The Church of Jesus Christ of Latter-day Saints. Built with React, TypeScript, and Tailwind CSS.
 
-[**Try out the demo!**](https://reactle.vercel.app/)
+**Play Churchle daily and test your knowledge of scriptural vocabulary!**
 
-## Build and run
+---
 
-### To Run Locally:
+**Disclaimer**: This project uses words from the standard works of The Church of Jesus Christ of Latter-day Saints but is not affiliated with, owned, operated, or approved by The Church of Jesus Christ of Latter-day Saints. This is an independent, fan-made project created for educational and entertainment purposes.
 
-Clone the repository and perform the following command line actions:
+## Features
+
+- 🙏 **Religious-themed word list**: Over 2,000 biblical names, church terms, and faith-based vocabulary
+- 📅 **Daily puzzle**: New word every day, cycling through the entire word list
+- 🎨 **Multiple themes**: Dark mode and high contrast mode support
+- 📊 **Statistics tracking**: Track your success rate, streaks, and guess distribution
+- 🎮 **Hard mode**: Challenge yourself with stricter guessing rules
+- 📱 **Responsive design**: Play on any device
+- 🎯 **Win messages**: Encouraging messages like "Celestial Guess!", "Heavenly", and "Nephi would be proud!"
+
+## How to Play
+
+1. Guess the word in 6 tries
+2. Each guess must be a valid 5-letter word
+3. After each guess, the color of the tiles will change:
+   - **Green**: Letter is correct and in the right position
+   - **Yellow**: Letter is in the word but in the wrong position
+   - **Gray**: Letter is not in the word
+4. A new word is available each day at midnight
+
+## Run Locally
+
+Clone the repository and install dependencies:
 
 ```bash
-$> cd react-wordle
-$> npm install
-$> npm run start
+git clone https://github.com/jethrojones/churchle.git
+cd churchle
+npm install
+npm start
 ```
 
-### To build/run docker container:
+Open [http://localhost:3000](http://localhost:3000) to play locally.
 
-#### Development
+## Technology Stack
+
+- **React 17**: Component-based UI framework
+- **TypeScript**: Type-safe JavaScript
+- **Tailwind CSS**: Utility-first styling
+- **Headless UI**: Accessible UI components
+- **Local Storage**: Persistent game state and statistics
+- **Fathom Analytics**: Privacy-focused usage tracking
+
+## Word List
+
+Churchle features a curated collection of over 2,000 words sourced from the standard works of The Church of Jesus Christ of Latter-day Saints, including:
+- Names from the Book of Mormon, Bible, Doctrine and Covenants, and Pearl of Great Price
+- Places mentioned in scripture (Perga, Golan, Jahaz)
+- Scriptural terms and concepts
+- Prophets and historical figures (Jonah, Nephi, Pratt)
+
+## Development
+
+### Build for Production
 
 ```bash
-$> docker build -t reactle:dev -f docker/Dockerfile .
-$> docker run -d -p 3000:3000 --name reactle-dev reactle:dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in browser.
-
-#### Production
+### Run Tests
 
 ```bash
-$> docker build --target=prod -t reactle:prod -f docker/Dockerfile .
-$> docker run -d -p 80:8080  --name reactle-prod reactle:prod
+npm test
 ```
 
-Open [http://localhost](http://localhost) in browser.
+### Code Formatting
 
-## Projects built using this repo
+```bash
+npm run lint    # Check formatting
+npm run fix     # Auto-fix formatting
+```
 
-### Other languages
+## Contributing
 
-- [Arwordle](https://arwordle.netlify.app/): Arabic
-- [Boludle](https://www.boludle.com/): Argentinian
-- [Gerdle](https://gerdle.vext.co.uk/): Cornish (Kernowek)
-- [Keclap](https://keclap.xyz/): Sundanese
-- [Kelmaly](https://kelmaly.com/): Arabic
-- [Latindictionary.io](https://wordle.latindictionary.io/): Latin
-- [Lexoula](https://lexoula.com/): Ελληνικά (Greek)
-- [Malay](https://malay-wordle.netlify.app/): Bahasa Malaysia
-- [Mondle](https://mondle.vercel.app/): Mongolian
-- [Parolette](https://parolette.netlify.app/): Italian
-- [Parolle.it](https://parolle.it): Italian
-- [Pashtoodle](https://pashtoodle.lingdocs.com): Pashto
-- [Persian](https://www.persian-wordle.ir/): Persian (Farsi)
-- [Pinyin](https://www.pinyindle.com/): Pinyin (romanization system for Mandarin Chinese)
-- [Rudle](https://rudle.vercel.app): Russian
-- [Sindhal](https://hellosindh.com/sindhal): Sindhi
-- [Szózat](https://szozat.miklosdanka.com/): Hungarian
-- [Tàu Tâi-gí (Taigi Wordle)](https://tau.taigi.info/): Taigi (Taiwanese)
-- [Tlembung](https://tlembung.vercel.app/): Japanese
-- [Tugma](https://tugma.vercel.app): Hiligaynon (spoken in the Philippines)
-- [Ukrainian](https://goroh.pp.ua/games/wordle): Ukrainian
-- [Urdle](https://urdle.chaoticity.com/): Urdu
-- [Vārdulis](https://wordle.lielakeda.lv/): Latvian
-- [Word-leh!](https://word-leh.com): Singlish
-- [Wordlar](http://wordlar.uz/): Uzbek
-- [Wordle (BOS)](https://elahmo.github.io/wordle/): Bosnian
-- [Wordle (Spanish)](https://wordle-es.xavier.cc): Spanish/Espanol
-- [Wordle-RO](https://wordle-ro.sirb.net/): Romanian
-- [Wortel](https://wortel.wrintiewaar.co.za): Afrikaans
-- [Wörtchen](https://woertchen.sofacoach.de): German
-- [SGWordle](https://sgwordle.now.sh/): Swiss German
-- [kelma.mt](https://kelma.mt): Maltese
-- [Слівце](https://slivce.com/): Ukrainian
-- [ਪੰਜਾਬੀ](https://punjabipuzzle.netlify.app/): Punjabi
-- [சொல்லாடல் Soladle](https://omtamil.com/soladle): Tamil
-- [字知之明](https://zedaizd.github.io/zh-char-puzzle/): Traditional Chinese
-- [꼬들 - 한국어](https://belorin.github.io/): Korean
-- [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
-- [ไทย](https://buddhistuniversity.net/wordle-thai/): Thai
+Contributions are welcome! Feel free to open issues or submit pull requests to improve Churchle.
 
-### Fun themes
+## License
 
-- ['en si lì'ur](https://tirea.learnnavi.org/wordle): Na'vi, the constructed language from James Cameron's AVATAR (2009)
-- [Airportle](https://airportle.scottscheapflights.com/): Airport Codes
-- [Anidal](https://anidal-abrarhayat.web.app/): Animals
-- [Birdle - Emojis](https://birdle.dev): Bird emojis
-- [Birdle](https://www.creek-birdle.com/): Birds
-- [Buildly](https://buildly.procurepro.co/): Construction themed
-- [Crosswordle](https://crosswordle.mekoppe.com/): Crossword mashup
-- [Dundle](https://dundle.dunmiffcord.com/): The Office
-- [FFXIVrdle](https://ffxivrdle.com/): Final Fantasy XIV
-- [Harry Potter](https://www.harrypotterwordle.com/): Harry Potter
-- [JoJodle](https://jojo-news.com/fun/jojodle/): JoJo’s Bizarre Adventure
-- [Mahjong Handle](https://mahjong-handle.update.sh/): Mahjong Hands
-- [Filmle](https://filmle.now.sh/): Movie titles
-- [Movie Wordle](https://movie-wordle.vercel.app): Bollywood
-- [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
-- [Poker Handle](https://kikychow.github.io/poker-wordle/): Poker
-- [Quettale](https://quettale.vercel.app/): Quenya, Elven language in LOTR
-- [Radiole](https://radiole.vercel.app/): Radio-themed (for World Radio Day)
-- [Squirdle](https://squirdle-inky.vercel.app/): Pokeman
-- [Taylordle](https://www.taylordle.com/): Taylor Swift
-- [Trekle](https://treklegame.com): Star Trek
-- [Weedel](https://meetmeinouter.space/wordle/): Video game characters
-- [Wordle.cl](https://www.wordle.cl): Chilean modisms, cities, places
-- [Wrdl](https://wrdl-abae.vercel.app/): Words that are 5 letters long after getting rid of their vowels
+This project is based on the open-source React Wordle template.
 
-### Math, Acronyms, Science, Tech, and more
+## Credits
 
-- [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
-- [Colordle](https://github.com/necropolina/colordle): Guess the hexadecimal color code of the background
-- [Genel](https://andrewholding.github.io/gene-wordle/): Gene symbols
-- [Jazle](https://jazle.quest/): Javascript
-- [Mathler](https://www.mathler.com/): Find the solution that equals X
-- [Morsel](https://plingbang.github.io/morsel/): Morse
-- [Numble](https://rbrignall.github.io/numble/): Maths
-- [Opsle](https://opsle.vercel.app/): Ops
-- [Passwordle](https://passwordle.sp8c3.com/): Passwords
-- [Primel](https://converged.yt/primel/): Prime numbers
-- [Qwordle](https://qwordle.bhat.ca/): Quantum version of Wordle (uses entangled word-pairs)
-- [Quantle](https://deduckproject.github.io/quantle/): Another quantum variant where guesses are quantum equations
-- [Rundle](https://furstenheim.github.io/react-wordle/): Like wordle, but only last three guesses are considered.
-- [Stockle](https://stockle.win/): Guess the stock or ETF
-- [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
-- [UNLOCOdle](https://unlocodle.collabital.com/): UNLOCODEs
-- [Visionle](https://orisenbazuru.github.io/visionle/): Guess the label of randomly chosen image from ImageNet/ImageNet-Sketch dataset (Machine learning)
-
-_Want to add one to the list? Just make a pull request or [let us know via a comment here](https://github.com/cwackerfuss/react-wordle/issues/120)_
-
-## FAQ
-
-### How can I change the length of a guess?
-
-- Update the `MAX_WORD_LENGTH` variable in [src/constants/settings.ts](src/constants/settings.ts) to the desired length.
-- Update the `WORDS` array in [src/constants/wordlist.ts](src/constants/wordlist.ts) to only include words of the new length.
-- Update the `VALID_GUESSES` array in [src/constants/validGuesses.ts](src/constants/validGuesses.ts) arrays to only include words of the new length.
-
-### How can I create a version in another language?
-
-- In [.env](.env):
-  - Update the title and the description
-  - Set the `REACT_APP_LOCALE_STRING` to your locale
-- In [public/index.html](public/index.html):
-  - Update the "You need to enable JavaScript" message
-  - Update the language attribute in the HTML tag
-  - If the language is written right-to-left, add `dir="rtl"` to the HTML tag
-- Update the name and short name in [public/manifest.json](public/manifest.json)
-- Update the strings in [src/constants/strings.ts](src/constants/strings.ts)
-- Add all of the five letter words in the language to [src/constants/validGuesses.ts](src/constants/validGuesses.ts), replacing the English words
-- Add a list of goal words in the language to [src/constants/wordlist.ts](src/constants/wordlist.ts), replacing the English words
-- Update the "Settings" modal in [src/components/modals/SettingsModal.tsx](src/components/modals/SettingsModal.tsx)
-- Update the "Info" modal in [src/components/modals/InfoModal.tsx](src/components/modals/InfoModal.tsx)
-- If the language has letters that are not present in English update the keyboard in [src/components/keyboard/Keyboard.tsx](src/components/keyboard/Keyboard.tsx)
-- If the language is written right-to-left, prepend `\u202E` (the unicode right-to-left override character) to the return statement of the inner function in `generateEmojiGrid` in [src/lib/share.ts](src/lib/share.ts)
-
-### How can I add usage tracking?
-
-This repository includes support for Google Analytics or [Plausible Analytics](https://plausible.io), but, by default, this is disabled.
-
-To enable Google Analytics:
-
-- Create a Google Analytics 4 property and obtain the measurement ID (of the format `G-XXXXXXXXXX`)
-- In [.env](.env), add `REACT_APP_GOOGLE_MEASUREMENT_ID=G-XXXXXXXXXX`
-
-Keep in mind that your region might have legislation about obtaining a user's consent before enabling trackers. This is up to downstream repos to implement.
-
-To enable Plausible Analytics:
-
-- Create a new website with Plausible Analytics with a given domain, e.g. `example.app`
-- In [.env](.env), add `REACT_APP_PLAUSIBLE_DOMAIN=example.app`
+Built with inspiration from the original Wordle game. Customized for religious education and vocabulary building.
