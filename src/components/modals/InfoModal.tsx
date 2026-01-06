@@ -59,13 +59,13 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
         This is built on an open source version of the word guessing game we all know and
-        love -{' '}
+        love, but with a "think celestial" twist, with words sourced only from the standard works. If you're nerdy,{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
           check out the original code here
-        </a>{' '}
+        </a>
       </p>
     </BaseModal>
   )
